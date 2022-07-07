@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Food Cour</title>
+  <!-- // font //  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Almarai&family=Lato:wght@300;400;700;900&family=Ranchers&display=swap"
+    rel="stylesheet" />
+  <!-- // bootstrap //  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+  <!-- // icon //  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <!-- // icon //  -->
+  <link rel="stylesheet" href="css/main.css" />
+  <!-- // swiper //  -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+  <div class="loading container-fluid">
+    <span class="circle circle-1"></span>
+    <span class="circle circle-2"></span>
+    <span class="circle circle-3"></span>
+    <span class="circle circle-4"></span>
+    <span class="circle circle-5"></span>
+    <span class="circle circle-6"></span>
+    <span class="circle circle-7"></span>
+    <span class="circle circle-8"></span>
+  </div>
+
+  <header class="container-fluid position-fixed bg-white top-0">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white row">
+        <a class="col-6 col-lg-3 navbar-brand text-primary text-uppercase" href="#">
+          <h2 class="fw-bolder">The Food Cour</h2>
+        </a>
+        <button class="navbar-toggler col-md-1 col-2 m-1 fs-6" type="button" data-toggle="collapse"
+          data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse col-9 justify-content-end" id="navbarText">
+          <ul class="navbar-nav fs-5 fw-semibold align-items-lg-center w-75 justify-content-end gap-4">
+            <li class="nav-item active">
+              <a class="nav-link text-dark" href="#serv">Solutions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#features">Advantages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#account">Pricing</a>
+            </li>
+            <div class="d-flex gap-4 align-items-center fs-6 flex-grow-1 justify-content-lg-end">
+              <a class="text-decoration-none text-dark ar-page" href="#">
+                عربى
+              </a>
+              <a class="btn-prime fw-normal" href="#request"> Request demo </a>
+            </div>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <div class="landing">
+    <div class="container h-100">
+      <div class="row h-100 flex-wrap-reverse pt-5 align-items-center position-relative">
+        <div class="col-lg-5 d-flex flex-wrap">
+          <h1 class="my-4 fw-bold lReveal">
+            <span>Scan </span><span class="fw-bold f-color">QR</span><span> Menu, Order, </span><span
+              class="fw-bold f-color">Pick Up </span><span>or </span><span class="fw-bold f-color">Dine </span><span>in
+              now</span>
+          </h1>
+          <p class="fw-bold lReveal my-5 lreveal">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida
+            quisque sagittis in
+          </p>
+          <a class="btn-prime px-5 py-3 m-1 fw-semibold dReveal" href="#">
+            Open an account
+          </a>
+          <a class="btn-prime-outline p-3 m-1 fw-semibold dReveal" href="#">
+            Try demo account
+          </a>
+        </div>
+        <div class="col-lg-7">
+          <img class="w-100 landing-img rReveal" src="images/landing.PNG" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="trasted">
+    <div class="container my-3">
+      <span class="fw-bold text-opacity-75 text-secondary">Trusted by</span>
+    </div>
+    <div class="swiper container">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide text-center">
+          <img class="w-50" src="images/slider.PNG" alt="" />
+        </div>
+        <div class="swiper-slide text-center">
+          <img class="w-50" src="images/slider1.PNG" alt="" />
+        </div>
+        <div class="swiper-slide text-center">
+          <img class="w-50" src="images/slider2.PNG" alt="" />
+        </div>
+        <div class="swiper-slide text-center">
+          <img class="w-50" src="images/slider3.PNG" alt="" />
+        </div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev text-secondary text-opacity-75"></div>
+      <div class="swiper-button-next text-secondary text-opacity-75"></div>
+    </div>
+  </div>
+  <div class="services my-5 py-5">
+    <div class="container">
+      <div class="row flex-wrap-reverse pt-5 align-items-center position-relative justify-content-between">
+        <div class="col-lg-5 d-flex flex-wrap">
+          <h2 class="my-4 fw-bolder fs-1 lReveal text-dark">Who we serve?</h2>
+          <p class="fw-semibold lReveal my-5 lreveal text-opacity-25">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio sed
+            dui pellentesque platea ac viverra mi risus amet. Pharetra,
+            ullamcorper odio et in urna sodales. Hendrerit scelerisque est
+            eleifend semper suspendisse id euismod semper.
+          </p>
+          <div class="d-flex gap-2 align-items-center fs-4">
+            <a class=" f-color m-1 fw-semibold dReveal" href="#">
+              Learn more
+            </a>
+            <i class="fa-solid fa-arrow-right f-color m-1 fw-semibold dReveal" href="#">
+            </i>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <img class="w-100 landing-img rReveal" src="images/services.PNG" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="features container-fluid mt-5" id="features">
+    <div class="container">
+      <div class="row py-5">
+        <h2 class="fw-bolder fs-1 text-dark title text-center position-relative dReveal">
+          Our Features
+        </h2>
+      </div>
+      <div class="gap-4 justify-content-center row py-5">
+        <div
+          class="features-card rounded-3 d-flex align-items-center py-5 flex-column h-100 text-center col-lg-3 col-md-6 bg-secondary bg-opacity-10 lReveal">
+          <div class="rounded-circle d-flex  justify-content-center align-items-center bg-white ">
+            <img src="images/featuers.svg" class="w-50 py-5" alt="" />
+          </div>
+          <h3 class="fw-bolder py-4 text-dark">Customizable Menu</h3>
+          <p class="text-muted px-1 ">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+
+        <div
+          class="features-card rounded-3 d-flex align-items-center py-5 flex-column h-100 text-center col-lg-3 col-md-6 bg-secondary bg-opacity-10 uReveal">
+          <div class="rounded-circle d-flex  justify-content-center align-items-center bg-white ">
+            <img src="images/featuers2.svg" class="w-50 py-5" alt="" />
+          </div>
+          <h3 class="fw-bolder py-4 text-dark">Promotional Banner</h3>
+          <p class="text-muted px-1 ">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+
+        <div
+          class="features-card rounded-3 d-flex align-items-center py-5 flex-column h-100 text-center col-lg-3 col-md-6 bg-secondary bg-opacity-10 dReveal">
+          <div class="rounded-circle d-flex  justify-content-center align-items-center bg-white ">
+            <img src="images/featuers3.svg" class="w-50 py-5" alt="" />
+          </div>
+          <h3 class="fw-bolder py-4 text-dark">Advanced Analytics</h3>
+          <p class="text-muted px-1 ">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+
+        <div
+          class="features-card rounded-3 d-flex align-items-center py-5 flex-column h-100 text-center col-lg-3 col-md-6 bg-secondary bg-opacity-10 rReveal">
+          <div class="rounded-circle d-flex  justify-content-center align-items-center bg-white ">
+            <img src="images/featuers4.svg" class="w-50 py-5" alt="" />
+          </div>
+          <h3 class="fw-bolder py-4 text-dark">Price Adjusting</h3>
+          <p class="text-muted px-1 ">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="serv container-fluid mt-5" id="serv">
+    <div class="container">
+      <div class="row py-5">
+        <h2 class="fw-bolder text-dark fs-1 title text-center position-relative dReveal">
+          How we serv you
+        </h2>
+      </div>
+      <div class="py-5">
+        <div class="row m-auto align-items-center flex-row-reverse justify-content-between">
+          <div class="col-md-5 d-flex flex-column gap-4">
+            <h2 class="fw-bolder f-color lReveal opacity-50 fs-1">01</h2>
+            <h3 class="fw-bolder rReveal">Scan QR code</h3>
+            <p class=" text-muted dReveal pb-5">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis volutpat sollicitudin
+              laoreet vel nisi risus. Enim, ut elit imperdiet egestas ut nam auctor dignissim. Sociis
+              elit etiam in blandit euismod.
+              </a>
+            </p>
+          </div>
+          <div class="col-md-6">
+            <img src="images/serv.PNG" class="w-100 rReveal" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="py-5">
+        <div class="row m-auto align-items-center  justify-content-between">
+          <div class="col-md-5 d-flex flex-column gap-4">
+            <h2 class="fw-bolder f-color lReveal opacity-50 fs-1">02</h2>
+            <h3 class="fw-bolder lReveal">View the digital menu</h3>
+            <p class=" text-muted dReveal pb-5">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis volutpat sollicitudin
+              laoreet vel nisi risus. Enim, ut elit imperdiet egestas ut nam auctor dignissim. Sociis
+              elit etiam in blandit euismod.
+              </a>
+            </p>
+          </div>
+          <div class="col-md-6">
+            <img src="images/serv2.PNG" class="w-100 rReveal" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="py-5">
+        <div class="row m-auto align-items-center flex-row-reverse justify-content-between">
+          <div class="col-md-5 d-flex flex-column gap-4">
+            <h2 class="fw-bolder f-color rReveal opacity-50 fs-1">03</h2>
+            <h3 class="fw-bolder lReveal">Scan QR code</h3>
+            <p class=" text-muted dReveal pb-5">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis volutpat sollicitudin
+              laoreet vel nisi risus. Enim, ut elit imperdiet egestas ut nam auctor dignissim. Sociis
+              elit etiam in blandit euismod.
+              </a>
+            </p>
+          </div>
+          <div class="col-md-6">
+            <img src="images/serv3.PNG" class="w-100 rReveal" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="py-5">
+        <div class="row m-auto align-items-center  justify-content-between">
+          <div class="col-md-5 d-flex flex-column gap-4">
+            <h2 class="fw-bolder f-color lReveal opacity-50 fs-1">04</h2>
+            <h3 class="fw-bolder lReveal">Scan QR code</h3>
+            <p class=" text-muted dReveal pb-5">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis volutpat sollicitudin
+              laoreet vel nisi risus. Enim, ut elit imperdiet egestas ut nam auctor dignissim. Sociis
+              elit etiam in blandit euismod.
+              </a>
+            </p>
+          </div>
+          <div class="col-md-6">
+            <img src="images/serv4.PNG" class="w-100 rReveal" alt="" />
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  <div class="account w-100 mt-5" id="account">
+
+    <div class="row py-5 w-100">
+      <h2 class="fw-bolder fs-1 text-dark title text-center position-relative dReveal">
+        Packages & Pricing
+      </h2>
+    </div>
+
+
+
+
+
+    <div class="bg-secondary bg-opacity-10 d-flex flex-column align-items-center pb-5 ">
+
+      <div class="bg-white d-inline-flex  fw-semibold  my-5 p-0 rounded-5 account-btn">
+        <button class="bg-color  border-0 d-flex align-items-center px-5 py-1 rounded-5 month-btn"
+          data-goal=".mounthly">MONTHLY</button>
+        <button class="bg-white border-0 d-flex flex-column px-5 py-1 rounded-5 year-btn "
+          data-goal=".yearly"><span>YEARLY</span> <span class="f-color ">30% of</span></button>
+      </div>
+
+
+      <div class="container justify-content-center row my-5 bg-body rounded-5 mounthly">
+
+        <div class="col-md-6 col-lg-3 account-card  rounded-5 lReveal  px-4 pt-4">
+
+          <div class="pt-4 d-flex align-items-center gap-3"><span class="fw-bolder text-dark fs-3 text-opacity-75">EGP
+              200</span>
+            <span class="text-muted">/month</span>
+          </div>
+          <span class=" d-block fs-3 fw-bold text-dark  my-3 text-opacity-75"> Basic</span>
+          <p class=" fw-bold text-dark text-opacity-75 ">
+            For most businesses that want to
+            otpimize web queries
+          </p>
+          <div class="py-3">
+
+            <div class="d-flex align-items-center gap-2">
+              <i class="fa-solid fa-check bg-secondary p-1 rounded-circle bg-opacity-25 text-opacity-75 text-dark "></i>
+              <span class="fs-5 text-dark text-opacity-50 ">Lorem ipsum</span>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <i class="fa-solid fa-check bg-secondary p-1 rounded-circle bg-opacity-25 text-opacity-75 text-dark "></i>
+              <span class="fs-5 text-dark text-opacity-50 ">Lorem ipsum</span>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <i class="fa-solid fa-check bg-secondary p-1 rounded-circle bg-opacity-25 text-opacity-75 text-dark "></i>
+              <span class="fs-5 text-dark text-opacity-50 ">Lorem ipsum</span>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <i class="fa-solid fa-check bg-secondary p-1 rounded-circle bg-opacity-25 text-opacity-75 text-dark "></i>
+              <span class="fs-5 text-dark text-opacity-50 ">Lorem ipsum</span>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <i class="fa-solid fa-check bg-secondary p-1 rounded-circle bg-opacity-25 text-opacity-75 text-dark "></i>
+              <span class="fs-5 text-dark text-opacity-50 ">Lorem ipsum</span>
+            </div>
+          </div>
+          <a class="btn-prime w-100 py-2 mb-5 text-center d-block fw-semibold" href="">Open an account</a>
+        </div>
+        <div class="col-md-6 col-lg-3 account-card  rounded-5 uReveal  px-4 pt-4">
+
+          <div class="pt-4 d-flex align-items-center gap-3"><span class="fw-bolder text-dark fs-3 text-opacity-75">EGP
+              200</span>
+            <span class="text-muted">/month</span>
+          </div>
+          <span class=" d-block fs-3 fw-bold text-dark  my-3 text-opacity-75">Pro</span>
+          <p class=" fw-bold text-dark text-opacity-75 ">
+            For most businesses that want to
+            otpimize web queries
+          </p>
+          <div class="py-3">
+
+            <div class="d-flex align-items-center gap-2">
+              <i class="fa-solid fa-check bg-secondary p-1 rounded-circle bg-opacity-25 text-opacity-75 text-dark "></i>
+              <span class="fs-5 text-dark text-opacity-50 ">Lorem ipsum</span>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <i class="fa-solid fa-check bg-secondary p-1 rounded-circle bg-opacity-25 text-opacity-75 text-dark "></i>
+              <span class="fs-5 text-dark text-opacity-50 ">Lorem ipsum</span>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <i class="fa-solid fa-check bg-secondary p-1 rounded-circle bg-opacity-25 text-opacity-75 text-dark "></i>
+              <span class="fs-5 text-dark text-opacity-50 ">Lorem ipsum</span>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <i class="fa-solid fa-check bg-secondary p-1 rounded-circle bg-opacity-25 text-opacity-75 text-dark "></i>
+              <span class="fs-5 text-dark text-opacity-50 ">Lorem ipsum</span>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <i class="fa-solid fa-check bg-secondary p-1 rounded-circle bg-opacity-25 text-opacity-75 text-dark "></i>
+              <span class="fs-5 text-dark text-opacity-50 ">Lorem ipsum</span>
+            </div>
+          </div>
+          <a class="btn-prime w-100 py-2 mb-5 text-center d-block fw-semibold" href="">Open an account</a>
+        </div>
+        <div class="col-md-6 col-lg-3 account-card position-relative  rounded-5 dReveal bg-color px-4 pt-4">
+          <span class="position-absolute  bg-white  text-dark rounded-5  p-2   text-center fw-semibold">MOST
+            POPULAR</span>
+          <div class="pt-4 d-flex align-items-center gap-3"><span class="fw-bolder text-white fs-3">EGP 200</span>
+            <span class="text-white">/month</span>
+          </div>
+          <span class=" d-block fs-3 fw-bold text-white  my-3">Advanced</span>
+          <p class=" fw-bold text-white ">
+            For most businesses that want to
+            otpimize web queries
+          </p>
+          <div class="py-3">
+            <div class="d-flex align-items-center gap-2">
+              <i class="fa-solid fa-check bg-white p-1 rounded-circle bg-opacity-10 "></i> <span
+                class="fs-5 text-white">Lorem ipsum</span>
+            </div>
+
+            <div class="d-flex align-items-center gap-2">
+              <i class="fa-solid fa-check bg-white p-1 rounded-circle bg-opacity-10 "></i> <span
+                class="fs-5 text-white">Lorem ipsum</span>
+            </div>
+
+            <div class="d-flex align-items-center gap-2">
+              <i class="fa-solid fa-check bg-white p-1 rounded-circle bg-opacity-10 "></i> <span
+                class="fs-5 text-white">Lorem ipsum</span>
+            </div>
+
+            <div class="d-flex align-items-center gap-2">
+              <i class="fa-solid fa-check bg-white p-1 rounded-circle bg-opacity-10 "></i> <span
+                class="fs-5 text-white">Lorem ipsum</span>
+            </div>
+
+            <div class="d-flex align-items-center gap-2">
+              <i class="fa-solid fa-check bg-white p-1 rounded-circle bg-opacity-10 "></i> <span
+                class="fs-5 text-white">Lorem ipsum</span>
+            </div>
+
+          </div>
+          <a class="bg-white text-decoration-none text-dark fw-semibold rounded-5 w-100 py-2 mb-5 text-center d-block"
+            href="">Open an
+            account</a>
+        </div>
+        <div class="col-md-6 col-lg-3 account-card  rounded-5 rReveal  px-4 pt-4">
+
+          <div class="pt-4 d-flex align-items-center gap-3"><span class="fw-bolder text-dark fs-3 text-opacity-75">EGP
+              200</span>
+            <span class="text-muted">/month</span>
+          </div>
+          <span class=" d-block fs-3 fw-bold text-dark  my-3 text-opacity-75">Premuim</span>
+          <p class=" fw-bold text-dark text-opacity-75 ">
+            For most businesses that want to
+            otpimize web queries
+          </p>
+          <div class="py-3">
+
+            <div class="d-flex align-items-center gap-2">
+              <i class="fa-solid fa-check bg-secondary p-1 rounded-circle bg-opacity-25 text-opacity-75 text-dark "></i>
+              <span class="fs-5 text-dark text-opacity-50 ">Lorem ipsum</span>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <i class="fa-solid fa-check bg-secondary p-1 rounded-circle bg-opacity-25 text-opacity-75 text-dark "></i>
+              <span class="fs-5 text-dark text-opacity-50 ">Lorem ipsum</span>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <i class="fa-solid fa-check bg-secondary p-1 rounded-circle bg-opacity-25 text-opacity-75 text-dark "></i>
+              <span class="fs-5 text-dark text-opacity-50 ">Lorem ipsum</span>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <i class="fa-solid fa-check bg-secondary p-1 rounded-circle bg-opacity-25 text-opacity-75 text-dark "></i>
+              <span class="fs-5 text-dark text-opacity-50 ">Lorem ipsum</span>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <i class="fa-solid fa-check bg-secondary p-1 rounded-circle bg-opacity-25 text-opacity-75 text-dark "></i>
+              <span class="fs-5 text-dark text-opacity-50 ">Lorem ipsum</span>
+            </div>
+          </div>
+          <a class="btn-prime w-100 py-2 mb-5 text-center d-block fw-semibold" href="">Open an account</a>
+        </div>
+
+
+      </div>
+      <div class="container justify-content-center row my-5 bg-body rounded-5 yearly">
+
+        <div class="col-md-6 col-lg-3 account-card  rounded-5 lReveal  px-4 pt-4">
+
+          <div class="pt-4 d-flex align-items-center gap-3"><span class="fw-bolder text-dark fs-3 text-opacity-75">EGP
+              900</span>
+            <span class="text-muted">/year</span>
+          </div>
+          <span class=" d-block fs-3 fw-bold text-dark  my-3 text-opacity-75"> Basic</span>
+          <p class=" fw-bold text-dark text-opacity-75 ">
+            For most businesses that want to
+            otpimize web queries
+          </p>
+          <div class="py-3">
+
+            <div class="d-flex align-items-center gap-2">
+              <i class="fa-solid fa-check bg-secondary p-1 rounded-circle bg-opacity-25 text-opacity-75 text-dark "></i>
+              <span class="fs-5 text-dark text-opacity-50 ">Lorem ipsum</span>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <i class="fa-solid fa-check bg-secondary p-1 rounded-circle bg-opacity-25 text-opacity-75 text-dark "></i>
+              <span class="fs-5 text-dark text-opacity-50 ">Lorem ipsum</span>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <i class="fa-solid fa-check bg-secondary p-1 rounded-circle bg-opacity-25 text-opacity-75 text-dark "></i>
+              <span class="fs-5 text-dark text-opacity-50 ">Lorem ipsum</span>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <i class="fa-solid fa-check bg-secondary p-1 rounded-circle bg-opacity-25 text-opacity-75 text-dark "></i>
+              <span class="fs-5 text-dark text-opacity-50 ">Lorem ipsum</span>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <i class="fa-solid fa-check bg-secondary p-1 rounded-circle bg-opacity-25 text-opacity-75 text-dark "></i>
+              <span class="fs-5 text-dark text-opacity-50 ">Lorem ipsum</span>
+            </div>
+          </div>
+          <a class="btn-prime w-100 py-2 mb-5 text-center d-block fw-semibold" href="">Open an account</a>
+        </div>
+        <div class="col-md-6 col-lg-3 account-card  rounded-5 uReveal  px-4 pt-4">
+
+          <div class="pt-4 d-flex align-items-center gap-3"><span class="fw-bolder text-dark fs-3 text-opacity-75">EGP
+              900</span>
+            <span class="text-muted">/year</span>
+          </div>
+          <span class=" d-block fs-3 fw-bold text-dark  my-3 text-opacity-75">Pro</span>
+          <p class=" fw-bold text-dark text-opacity-75 ">
+            For most businesses that want to
+            otpimize web queries
+          </p>
+          <div class="py-3">
+
+            <div class="d-flex align-items-center gap-2">
+              <i class="fa-solid fa-check bg-secondary p-1 rounded-circle bg-opacity-25 text-opacity-75 text-dark "></i>
+              <span class="fs-5 text-dark text-opacity-50 ">Lorem ipsum</span>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <i class="fa-solid fa-check bg-secondary p-1 rounded-circle bg-opacity-25 text-opacity-75 text-dark "></i>
+              <span class="fs-5 text-dark text-opacity-50 ">Lorem ipsum</span>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <i class="fa-solid fa-check bg-secondary p-1 rounded-circle bg-opacity-25 text-opacity-75 text-dark "></i>
+              <span class="fs-5 text-dark text-opacity-50 ">Lorem ipsum</span>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <i class="fa-solid fa-check bg-secondary p-1 rounded-circle bg-opacity-25 text-opacity-75 text-dark "></i>
+              <span class="fs-5 text-dark text-opacity-50 ">Lorem ipsum</span>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <i class="fa-solid fa-check bg-secondary p-1 rounded-circle bg-opacity-25 text-opacity-75 text-dark "></i>
+              <span class="fs-5 text-dark text-opacity-50 ">Lorem ipsum</span>
+            </div>
+          </div>
+          <a class="btn-prime w-100 py-2 mb-5 text-center d-block fw-semibold" href="">Open an account</a>
+        </div>
+        <div class="col-md-6 col-lg-3 account-card position-relative  rounded-5 dReveal bg-color px-4 pt-4">
+          <span class="position-absolute  bg-white  text-dark rounded-5  p-2   text-center fw-semibold">MOST
+            POPULAR</span>
+          <div class="pt-4 d-flex align-items-center gap-3"><span class="fw-bolder text-white fs-3">EGP 900</span>
+            <span class="text-white">/year</span>
+          </div>
+          <span class=" d-block fs-3 fw-bold text-white  my-3">Advanced</span>
+          <p class=" fw-bold text-white ">
+            For most businesses that want to
+            otpimize web queries
+          </p>
+          <div class="py-3">
+            <div class="d-flex align-items-center gap-2">
+              <i class="fa-solid fa-check bg-white p-1 rounded-circle bg-opacity-10 "></i> <span
+                class="fs-5 text-white">Lorem ipsum</span>
+            </div>
+
+            <div class="d-flex align-items-center gap-2">
+              <i class="fa-solid fa-check bg-white p-1 rounded-circle bg-opacity-10 "></i> <span
+                class="fs-5 text-white">Lorem ipsum</span>
+            </div>
+
+            <div class="d-flex align-items-center gap-2">
+              <i class="fa-solid fa-check bg-white p-1 rounded-circle bg-opacity-10 "></i> <span
+                class="fs-5 text-white">Lorem ipsum</span>
+            </div>
+
+            <div class="d-flex align-items-center gap-2">
+              <i class="fa-solid fa-check bg-white p-1 rounded-circle bg-opacity-10 "></i> <span
+                class="fs-5 text-white">Lorem ipsum</span>
+            </div>
+
+            <div class="d-flex align-items-center gap-2">
+              <i class="fa-solid fa-check bg-white p-1 rounded-circle bg-opacity-10 "></i> <span
+                class="fs-5 text-white">Lorem ipsum</span>
+            </div>
+
+          </div>
+          <a class="bg-white text-decoration-none text-dark fw-semibold rounded-5 w-100 py-2 mb-5 text-center d-block"
+            href="">Open an
+            account</a>
+        </div>
+        <div class="col-md-6 col-lg-3 account-card  rounded-5 rReveal  px-4 pt-4">
+
+          <div class="pt-4 d-flex align-items-center gap-3"><span class="fw-bolder text-dark fs-3 text-opacity-75">EGP
+              900</span>
+            <span class="text-muted">/year</span>
+          </div>
+          <span class=" d-block fs-3 fw-bold text-dark  my-3 text-opacity-75">Premuim</span>
+          <p class=" fw-bold text-dark text-opacity-75 ">
+            For most businesses that want to
+            otpimize web queries
+          </p>
+          <div class="py-3">
+
+            <div class="d-flex align-items-center gap-2">
+              <i class="fa-solid fa-check bg-secondary p-1 rounded-circle bg-opacity-25 text-opacity-75 text-dark "></i>
+              <span class="fs-5 text-dark text-opacity-50 ">Lorem ipsum</span>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <i class="fa-solid fa-check bg-secondary p-1 rounded-circle bg-opacity-25 text-opacity-75 text-dark "></i>
+              <span class="fs-5 text-dark text-opacity-50 ">Lorem ipsum</span>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <i class="fa-solid fa-check bg-secondary p-1 rounded-circle bg-opacity-25 text-opacity-75 text-dark "></i>
+              <span class="fs-5 text-dark text-opacity-50 ">Lorem ipsum</span>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <i class="fa-solid fa-check bg-secondary p-1 rounded-circle bg-opacity-25 text-opacity-75 text-dark "></i>
+              <span class="fs-5 text-dark text-opacity-50 ">Lorem ipsum</span>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <i class="fa-solid fa-check bg-secondary p-1 rounded-circle bg-opacity-25 text-opacity-75 text-dark "></i>
+              <span class="fs-5 text-dark text-opacity-50 ">Lorem ipsum</span>
+            </div>
+          </div>
+          <a class="btn-prime w-100 py-2 mb-5 text-center d-block fw-semibold" href="">Open an account</a>
+        </div>
+
+
+      </div>
+
+
+
+    </div>
+  </div>
+  <div class="py-4 faq-info">
+    <div class="container py-5">
+      <div class="row py-5">
+        <h2 class="fw-bolder fs-1 text-dark title text-center position-relative dReveal">
+          FAQ’s
+        </h2>
+      </div>
+      <div class="accordion py-4 d-flex flex-column gap-3" id="accordionExample">
+        <div class="">
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button collapsed border border-1 rounded-3 border-dark fw-bold border-opacity-25 border border-1 rounded-3 border-dark border-opacity-25"
+              type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+              aria-controls="collapseOne">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Ans.</strong> Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Tristique odio sit ut ipsum. Eget dignissim
+              ullamcorper consectetur non iaculis. Venenatis elit morbi
+              natoque leo. Quisque faucibus dictum semper maecenas amet
+              habitant. Magna libero nunc, quam nunc id ut urna tortor.
+              Ullamcorper donec diam ullamcorper tortor eget. Sollicitudin sed
+              pellentesque placerat feugiat odio amet, diam. Adipiscing
+              suscipit sed elit dui neque. Nibh est pellentesque volutpat
+              mauris morbi dolor lobortis at. Aliquet pulvinar nunc, mauris
+              aliquet volutpat id convallis quam dolor.
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed border border-1 rounded-3 border-dark fw-bold border-opacity-25"
+              type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true"
+              aria-controls="collapseTwo">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Ans.</strong> Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Tristique odio sit ut ipsum. Eget dignissim
+              ullamcorper consectetur non iaculis. Venenatis elit morbi
+              natoque leo. Quisque faucibus dictum semper maecenas amet
+              habitant. Magna libero nunc, quam nunc id ut urna tortor.
+              Ullamcorper donec diam ullamcorper tortor eget. Sollicitudin sed
+              pellentesque placerat feugiat odio amet, diam. Adipiscing
+              suscipit sed elit dui neque. Nibh est pellentesque volutpat
+              mauris morbi dolor lobortis at. Aliquet pulvinar nunc, mauris
+              aliquet volutpat id convallis quam dolor.
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed border border-1 rounded-3 border-dark fw-bold border-opacity-25"
+              type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true"
+              aria-controls="collapseThree">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Ans.</strong> Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Tristique odio sit ut ipsum. Eget dignissim
+              ullamcorper consectetur non iaculis. Venenatis elit morbi
+              natoque leo. Quisque faucibus dictum semper maecenas amet
+              habitant. Magna libero nunc, quam nunc id ut urna tortor.
+              Ullamcorper donec diam ullamcorper tortor eget. Sollicitudin sed
+              pellentesque placerat feugiat odio amet, diam. Adipiscing
+              suscipit sed elit dui neque. Nibh est pellentesque volutpat
+              mauris morbi dolor lobortis at. Aliquet pulvinar nunc, mauris
+              aliquet volutpat id convallis quam dolor.
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed border border-1 rounded-3 border-dark fw-bold border-opacity-25"
+              type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true"
+              aria-controls="collapseFour">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Ans.</strong> Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Tristique odio sit ut ipsum. Eget dignissim
+              ullamcorper consectetur non iaculis. Venenatis elit morbi
+              natoque leo. Quisque faucibus dictum semper maecenas amet
+              habitant. Magna libero nunc, quam nunc id ut urna tortor.
+              Ullamcorper donec diam ullamcorper tortor eget. Sollicitudin sed
+              pellentesque placerat feugiat odio amet, diam. Adipiscing
+              suscipit sed elit dui neque. Nibh est pellentesque volutpat
+              mauris morbi dolor lobortis at. Aliquet pulvinar nunc, mauris
+              aliquet volutpat id convallis quam dolor.
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed border border-1 rounded-3 border-dark fw-bold border-opacity-25"
+              type="button" data-bs-toggle="collapse" data-bs-target="#collapse-5" aria-expanded="true"
+              aria-controls="collapse-5">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </button>
+          </h2>
+          <div id="collapse-5" class="accordion-collapse collapse" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Ans.</strong> Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Tristique odio sit ut ipsum. Eget dignissim
+              ullamcorper consectetur non iaculis. Venenatis elit morbi
+              natoque leo. Quisque faucibus dictum semper maecenas amet
+              habitant. Magna libero nunc, quam nunc id ut urna tortor.
+              Ullamcorper donec diam ullamcorper tortor eget. Sollicitudin sed
+              pellentesque placerat feugiat odio amet, diam. Adipiscing
+              suscipit sed elit dui neque. Nibh est pellentesque volutpat
+              mauris morbi dolor lobortis at. Aliquet pulvinar nunc, mauris
+              aliquet volutpat id convallis quam dolor.
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed border border-1 rounded-3 border-dark fw-bold border-opacity-25"
+              type="button" data-bs-toggle="collapse" data-bs-target="#collapse-6" aria-expanded="true"
+              aria-controls="collapse-6">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </button>
+          </h2>
+          <div id="collapse-6" class="accordion-collapse collapse" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Ans.</strong> Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Tristique odio sit ut ipsum. Eget dignissim
+              ullamcorper consectetur non iaculis. Venenatis elit morbi
+              natoque leo. Quisque faucibus dictum semper maecenas amet
+              habitant. Magna libero nunc, quam nunc id ut urna tortor.
+              Ullamcorper donec diam ullamcorper tortor eget. Sollicitudin sed
+              pellentesque placerat feugiat odio amet, diam. Adipiscing
+              suscipit sed elit dui neque. Nibh est pellentesque volutpat
+              mauris morbi dolor lobortis at. Aliquet pulvinar nunc, mauris
+              aliquet volutpat id convallis quam dolor.
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed border border-1 rounded-3 border-dark fw-bold border-opacity-25"
+              type="button" data-bs-toggle="collapse" data-bs-target="#collapse-7" aria-expanded="true"
+              aria-controls="collapse-7">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </button>
+          </h2>
+          <div id="collapse-7" class="accordion-collapse collapse" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Ans.</strong> Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Tristique odio sit ut ipsum. Eget dignissim
+              ullamcorper consectetur non iaculis. Venenatis elit morbi
+              natoque leo. Quisque faucibus dictum semper maecenas amet
+              habitant. Magna libero nunc, quam nunc id ut urna tortor.
+              Ullamcorper donec diam ullamcorper tortor eget. Sollicitudin sed
+              pellentesque placerat feugiat odio amet, diam. Adipiscing
+              suscipit sed elit dui neque. Nibh est pellentesque volutpat
+              mauris morbi dolor lobortis at. Aliquet pulvinar nunc, mauris
+              aliquet volutpat id convallis quam dolor.
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed border border-1 rounded-3 border-dark fw-bold border-opacity-25"
+              type="button" data-bs-toggle="collapse" data-bs-target="#collapse-8" aria-expanded="true"
+              aria-controls="collapse-8">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </button>
+          </h2>
+          <div id="collapse-8" class="accordion-collapse collapse" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Ans.</strong> Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Tristique odio sit ut ipsum. Eget dignissim
+              ullamcorper consectetur non iaculis. Venenatis elit morbi
+              natoque leo. Quisque faucibus dictum semper maecenas amet
+              habitant. Magna libero nunc, quam nunc id ut urna tortor.
+              Ullamcorper donec diam ullamcorper tortor eget. Sollicitudin sed
+              pellentesque placerat feugiat odio amet, diam. Adipiscing
+              suscipit sed elit dui neque. Nibh est pellentesque volutpat
+              mauris morbi dolor lobortis at. Aliquet pulvinar nunc, mauris
+              aliquet volutpat id convallis quam dolor.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-4 request" id="request">
+    <div class="container py-5">
+      <div class="row py-5">
+        <h2 class="fw-bolder fs-1 text-dark  text-center position-relative uReveal">
+          Request a demo for your company
+        </h2>
+        <p class="fw-semibold text-center w-75 mx-auto dReveal">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Morbi
+          tincidunt
+          magna ut
+          bibendum sed nec
+          scelerisque
+          feugiat. Et duis sed id sodales. Enim e</p>
+      </div>
+      <form class="row g-3">
+        <div class="col-md-6 col-lg-4 lReveal">
+          <label for="inputEmail4" class="form-label fw-semibold">Email</label>
+          <input type="email" placeholder="Enter your name"
+            class="form-control bg-secondary bg-opacity-10 py-4 px-4 border border-1 border-secondary border-opacity-50 fw-semibold"
+            id="inputEmail4">
+        </div>
+        <div class="col-md-6 col-lg-4 uReveal">
+          <label for="inputEmail4" class="form-label fw-semibold">Phone number</label>
+          <input type="email" placeholder="Enter your phone number"
+            class="form-control bg-secondary bg-opacity-10 py-4 px-4 border border-1 border-secondary border-opacity-50 fw-semibold"
+            id="inputEmail4">
+        </div>
+        <div class="col-md-6 col-lg-4 rReveal">
+          <label for="inputEmail4" class="form-label fw-semibold">Select one</label>
+          <input type="email" placeholder="Select one of the following"
+            class="form-control bg-secondary bg-opacity-10 py-4 px-4 border border-1 border-secondary border-opacity-50 fw-semibold"
+            id="inputEmail4">
+        </div>
+
+        <div class="px-4 text-center py-5 dReveal">
+          <button type="submit"
+            class="accordion bg-color border border-1 border-opacity-50 border-secondary col-lg-4 col-md-6 fw-semibold px-4 py-4 rounded">Request
+            a demo</button>
+        </div>
+      </form>
+
+
+    </div>
+  </div>
+
+  <footer class="bg-secondary bg-opacity-10 mt-5">
+    <div class="container">
+      <div class="row ">
+        <a class="col-6 col-lg-3 navbar-brand text-primary text-uppercase" href="#">
+          <h2 class="m-0 pt-5 uReveal">The Food Cour</h2>
+        </a>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-lg-3 col-md-6 pt-4 ">
+          <a class="fw-semibold text-dark text-decoration-none text-opacity-75 "
+            href="mailto:info@thefoodcourt.com">info@thefoodcourt.com </a>
+        </div>
+        <div class="col-lg-3 col-md-6 pt-4 ">
+          <span class="fw-semibold text-dark  text-opacity-75 ">16 Makram Ebid, Nasr City</span>
+        </div>
+
+
+        <div class="col-lg-3 col-md-6 pt-4 ">
+          <a class="fw-semibold text-dark text-decoration-none text-opacity-75 "
+            href="tel:+2012467346736">(+20)12467346736 </a>
+        </div>
+        <div class="col-lg-3 col-md-6 pt-4 ">
+          <span class="fw-semibold text-dark  text-opacity-75 ">Follow us</span>
+          <div class="social-icons w-100 d-flex align-items-center fs-2 justify-content-start ">
+            <a href="#">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+    <div class="py-4">
+      <div class="container">
+        <p class="text-dark text-opacity-75 fw-semibold mb-0 text-center">
+          Copyright&copy;<span id="copyright-data"></span> The Food Court | All Rights Reserved
+        </p>
+      </div>
+    </div>
+
+    <div class="position-fixed chat-holder">
+      <a href="https://wa.me/15551234567" target="_blank" class="text-white whatsapp">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+      <a href="https://wa.me/15551234567" target="_blank" class="text-white instgram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+    </div>
+  </footer>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/main.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
