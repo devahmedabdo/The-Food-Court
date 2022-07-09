@@ -126,7 +126,7 @@ div.active span:nth-child(3) {
 @media (max-width: 768px) {
   header .container > ul {
     position: absolute;
-    background: #ffffff9e;
+    background: #ffffffd9;
     top: 100%;
     flex-direction: column;
     transition: var(--small-duration);
