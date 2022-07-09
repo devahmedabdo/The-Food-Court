@@ -126,11 +126,11 @@ div.active span:nth-child(3) {
 @media (max-width: 768px) {
   header .container > ul {
     position: absolute;
-    background: white;
+    background: #ffffffd9;
     top: 100%;
     flex-direction: column;
     transition: var(--small-duration);
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(1px);
     width: 100%;
     border: saddlebrown;
     height: 0px;
