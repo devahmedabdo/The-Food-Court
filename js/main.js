@@ -18,6 +18,11 @@ $(document).ready(function () {
       $(".year-btn span:nth-child(2)").removeClass("text-white");
     }
   });
+
+  $(".span").click(() => {
+    $(".menu").toggleClass("active");
+    $(".span").toggleClass("active");
+  });
 });
 
 let myAnimation = document.querySelectorAll(

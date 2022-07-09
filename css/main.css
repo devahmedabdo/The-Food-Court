@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 :root {
   --main-color: #d9376e;
   --main-color-hover: #c73364;
@@ -51,14 +54,12 @@ body {
   padding-top: 72px;
   color: black;
 }
-body > div,
-body > footer,
-body > header {
+body > * {
   overflow: hidden;
 }
 .navbar-brand h2 {
   font-family: "Ranchers", cursive;
-  color: #d9376e;
+  color: var(--main-color);
 }
 .ar-page {
   font-family: "Almarai", sans-serif;
@@ -97,6 +98,52 @@ header {
 .nav-link:hover::after,
 .nav-link.active::after {
   width: 100%;
+}
+
+.span {
+  width: 30px;
+  display: none;
+}
+.span span {
+  height: 2px;
+  transform-origin: 0%;
+  transition: var(--small-duration);
+}
+div.active span:first-child {
+  transform: rotate(45deg);
+}
+div.active span:nth-child(2) {
+  width: 0px !important;
+}
+div.active span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+@media (min-width: 768px) {
+  .span {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  header .container > ul {
+    position: absolute;
+    background: #ffffff9e;
+    top: 100%;
+    flex-direction: column;
+    transition: var(--small-duration);
+    backdrop-filter: blur(6px);
+    width: 100%;
+    border: saddlebrown;
+    height: 0px;
+    overflow: hidden;
+    opacity: 0;
+  }
+  div.demo {
+    display: none !important;
+  }
+}
+header .container > ul.active {
+  height: 100vh;
+  opacity: 1;
 }
 /* ///////// */
 
