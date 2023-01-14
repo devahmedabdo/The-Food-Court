@@ -49,6 +49,30 @@ a.f-color {
   background-color: var(--main-color);
   border: 1px solid var(--main-color);
 }
+.fs-14 {
+  font-size: 14px;
+}
+.fs-20 {
+  font-size: 20px;
+}
+.fs-22 {
+  font-size: 22px;
+}
+.fs-34 {
+  font-size: 34px;
+}
+.text-desc {
+  color: #acacac;
+}
+.text-mony {
+  color: #324b50;
+}
+.text-accont {
+  color: #23c27f;
+}
+.text-loream {
+  color: #848199;
+}
 body {
   font-family: "Lato", sans-serif;
   padding-top: 72px;
@@ -61,25 +85,24 @@ body > * {
   font-family: "Ranchers", cursive;
   color: var(--main-color);
 }
-.ar-page {
+.lan-page {
   font-family: "Almarai", sans-serif;
   transition: var(--small-duration);
 }
-.ar-page:hover {
+.lan-page:hover {
   color: var(--main-color) !important;
 }
 /* ////// */
 header {
   min-height: 72px;
   z-index: 99;
+  box-shadow: 0px 5px 12px 10px white;
 }
 
 .nav-link {
   transition: var(--small-duration);
   position: relative;
-  padding-left: 0% !important;
-  padding-right: 0% !important;
-  font-weight: 400 !important;
+  padding: 10px 0px;
 }
 .nav-link:hover,
 .nav-link.active {
@@ -99,7 +122,13 @@ header {
 .nav-link.active::after {
   width: 100%;
 }
-
+a[href="#request"] {
+  font-size: 12px;
+}
+.landing a {
+  width: 33% !important;
+  min-width: 165px;
+}
 .span {
   width: 30px;
   display: none;
@@ -178,6 +207,18 @@ header .container > ul.active {
   filter: grayscale(0);
 }
 /* ////////////// */
+.services h2 {
+  font-size: 48px;
+}
+/* ////////////// */
+.serv h2 {
+  font-size: 72px;
+}
+.serv h3 {
+  color: #050505;
+  font-size: 36px;
+}
+/* ////////////// */
 .features-card {
   width: 23%;
   min-width: 310px;
@@ -186,19 +227,57 @@ header .container > ul.active {
 .features-card > div {
   width: 70px;
   height: 70px;
+  background-color: #fbe5f2;
 }
 /* ////////////// */
 .account-card {
   min-width: 270px;
+  position: relative;
+  transition: all var(--small-duration) !important;
+  top: 0px;
+  flex-grow: 1;
+  max-width: 360px;
 }
-.account-card.bg-color {
+.account-card span.position-absolute {
+  top: 10px;
+  right: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.account-card i {
+  width: 23px;
+  height: 23px;
+}
+.account-card:hover {
   top: -40px;
   box-shadow: 0px 50px 40px #cbcbcb;
+  background: url(../images/Pattern.svg) 160px -40px / cover no-repeat,
+    var(--main-color);
 }
-.account-card.bg-color span:first-child {
-  font-size: 10px;
-  right: 20px;
-  top: 20px;
+.account-card:hover span.position-absolute {
+  background-color: white;
+  color: #23c27f !important
+  ;
+}
+.account-card:hover div span,
+.account-card:hover span,
+.account-card:hover p,
+.account-card:hover i {
+  color: white !important;
+}
+.account-card:hover a {
+  background-color: white !important;
+  color: #050505 !important;
+}
+/* /// */
+.accordion-button:not(.collapsed) {
+  color: var(--main-color);
+  background-color: #fff5f8;
+  box-shadow: unset;
+}
+.accordion-button:focus {
+  outline: 0;
+  box-shadow: unset;
 }
 /* /// */
 
@@ -213,9 +292,9 @@ header .container > ul.active {
   color: var(--main-color);
   transition: var(--small-duration);
   border-radius: 50px;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
   font-size: 20px;
   text-align: center;
 }
@@ -223,30 +302,36 @@ header .container > ul.active {
   color: white;
   background-color: var(--main-color);
 }
+
+.dReveal,
+.lReveal,
+.rReveal,
+.uReveal {
+  opacity: 0;
+}
 .dReveal {
   transform: translateY(70px);
-  opacity: 0;
-  transition: 1s;
 }
 .lReveal {
   transform: translateX(-70px);
-  opacity: 0;
-  transition: 1s;
 }
 .rReveal {
   transform: translateX(70px);
-  opacity: 0;
-  transition: 1s;
 }
 .uReveal {
   transform: translateY(-70px);
-  opacity: 0;
-  transition: 1s;
 }
+
 .reveal {
   transform: translateY(0px);
-  transition: 1s;
   opacity: 1;
+}
+.dReveal,
+.lReveal,
+.rReveal,
+.uReveal,
+.reveal {
+  transition: transform 0.7s, opacity 1s;
 }
 .loading {
   position: fixed;

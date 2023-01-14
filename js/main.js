@@ -26,7 +26,7 @@ $(document).ready(function () {
 });
 
 let myAnimation = document.querySelectorAll(
-  "*.dReveal,*.rReveal,*.lReveal,*.uReveal"
+  ".dReveal,.rReveal,.lReveal,.uReveal"
 );
 window.addEventListener("scroll", () => {
   myAnimation.forEach((e) => {
